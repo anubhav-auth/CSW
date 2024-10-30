@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="https://www.google.com">google</a>
+    <br>
+    <a href="https://www.github.com">github</a>
+    <br>
+    <a href="https://www.linkedin.com">linkedIn</a>
+    <br>
+    <a href="https://www.yahoo.com">Yahoo</a>
+
+    <ul>
+        <li>hello</li>
+        <li>hello</li>
+    </ul>
+
+    <pre><code>
+        
+        import java.util.Arrays;
+        import java.util.Random;
+        
+        public class LinearSearch {
+            public static void main(String[] args) {
+                int[] a = new int[10];
+                int target = 78;
+                Random ra = new Random();
+                for (int i = 0; i < a.length; i++) {
+                    a[i] = ra.nextInt(100);
+                }
+                System.out.println(Arrays.toString(a));
+                recursiveFinder(target, 0, a);
+            }
+        
+            static void recursiveFinder(int target, int startIndex, int[] a) {
+                if (startIndex == a.length - 1) {
+                    if (a[startIndex] == target) {
+                        System.out.println("found target");
+                        return;
+                    }
+                    return;
+                }
+                if (a[startIndex] == target) {
+                    System.out.println("found target");
+                    return;
+                }
+                recursiveFinder(target, startIndex + 1, a);
+            }
+        }
+            </code></pre>
+
+</body>
+
+</html>

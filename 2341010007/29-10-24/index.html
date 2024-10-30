@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(
+            function () {
+                $("#hi12").click(
+                    function () {
+                        $("#hi12").animate(
+                            {
+                                left: "100px", 
+                                opacity: "0.45"
+                            }
+                        )
+                        $("#hi12").animate(
+                            {
+                                left: "0px", 
+                                opacity: "1.0"
+                            }
+                        )
+                    }
+                )
+            }
+        )
+    </script>
+</head>
+
+<body>
+    <div id="hi11">animate</div>
+    <div id="hi12" style="background-color: aqua;width: fit-content; position: relative;">jfopejfoea
+        <br>
+        jeoja
+    </div>
+</body>
+
+</html>
