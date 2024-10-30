@@ -1,0 +1,27 @@
+a {
+  outline-style: solid;
+  outline-color: black;
+  padding: 3px;
+  margin-top: 3px;
+  display:block;
+}
+a:link {
+  color: yellow;
+  background-color: aqua;
+}
+a:visited {
+  color: green;
+  background-color: cadetblue;
+}
+a:hover {
+  color: red;
+  background-color: antiquewhite;
+}
+a:active {
+  color: blue;
+  background-color: blueviolet;
+}
+ul{
+  list-style-type: none;
+  list-style-image: url(https://media.licdn.com/dms/image/v2/C5103AQGdljRST8gGog/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1524283725533?e=2147483647&v=beta&t=DKJg9xFZwneDGQcGw-Z-AlPL7v2Ic4zfg05IC2U16Es);
+}

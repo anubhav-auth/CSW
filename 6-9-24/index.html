@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+	<head>
+		<title>Document</title>
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+ 		</script>
+  		
+		<script>
+
+			$(document).ready(function() {
+
+				$("#abcde").click(function() {
+				$("h2").hide();
+				});
+
+				$("#fghi").click(function() {
+				$("h2").show();
+				});
+
+			});
+			</script>
+		<style>
+
+			h1{
+				color: Green
+			}
+			h2{
+				color: Blue
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<h1>My Heading: FullStack Development</h1>
+	
+		<h2>In this book we will learn full stack development.</h2>
+		<button id = "abcde">hide</button>
+		<button id = "fghi" >unhide</button>
+
+	</body>
+</html>

@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 2000px; /* To demonstrate scrolling */
+}
+
+.container {
+    position: relative; /* This establishes a positioning context for absolute children */
+    height: 200%;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.static-box {
+    background-color: #3498db;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    /* Static is the default position, no positioning properties needed */
+}
+
+.relative-box {
+    background-color: #2ecc71;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    position: relative;
+    left: 20px; /* Moves 20px to the right */
+    top: 20px; /* Moves 20px down */
+}
+
+.absolute-box {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    position: absolute; /* Positioned relative to the nearest positioned ancestor (the container) */
+    left: 40px; /* Moves 40px from the left edge of the container */
+    top: 40px; /* Moves 40px from the top edge of the container */
+}
+
+.fixed-box {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    position: fixed; /* Positioned relative to the viewport */
+    bottom: 20px; /* Stays 20px from the bottom of the viewport */
+    right: 20px; /* Stays 20px from the right of the viewport */
+}
+
+.sticky-box {
+    background-color: #8e44ad;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    position: sticky; /* Sticks to the top of the viewport when you scroll */
+    top: 0; /* Sticks to the top of the viewport */
+}
