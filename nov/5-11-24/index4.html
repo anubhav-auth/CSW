@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+	$(document).ready(function () {
+	
+	$("#bt1").click(function(){
+		$("#p1").prepend("sir")
+	})
+	
+	$("#bt2").click(function(){
+		$("ol").prepend("<li>Javacript2</li>")
+	})
+
+	})
+    </script>
+</head>
+<body>
+    <p id="p1">name: anubhav</p>
+    <p>list of subjects</p>
+    <ol>
+        <li>Introduction</li>
+        <li>Diagram</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JQuery</li>
+    </ol>
+
+    <button id="bt1">prepend</button>
+    <button id="bt2">prepend 2</button>
+</body>
+</html>

@@ -1,0 +1,56 @@
+#mark {
+  overflow-x: auto;
+  border: 5px solid rebeccapurple;
+}
+#navbarvertical {
+  position: relative; 
+	background-color:red;
+}
+
+#navbarvertical ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0;
+  display: flex; 
+}
+
+#navbarvertical ul a {
+    padding: 10px 15px; 
+text-decoration:none;
+}
+
+#navbarvertical ul a:hover {
+  background-color: yellow; 
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+tr {
+  margin: 20px;
+}
+tr:nth-child(even) {
+  background-color: dodgerblue;
+}
+ul{
+  list-style-type: none;
+}
+a:link{
+  color: dodgerblue;
+}
+a:visited{
+  color: blue;
+}
+a:hover{
+color: burlywood;
+}
+a:active{
+color: chartreuse;
+}

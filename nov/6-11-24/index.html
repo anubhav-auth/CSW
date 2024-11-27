@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#c1").nextUntil("#c4").css({ "border": "2px solid red" })
+        })
+    </script>
+
+</head>
+
+<body>
+
+    <div id="gggp">
+        great great grandparent(gggp)
+        <div id="ggp">
+            great grandparent(ggp)
+            <div id="gp">
+                grandparent(gp)
+                <div id="p">
+                    parent(p)
+                    <p id="c1">
+                        paragraph 1
+                    </p>
+                    <p id="c2">
+                        paragraph 2
+                    </p>
+
+                    <p id="c3">
+                        paragraph 3
+                    </p>
+
+                    <p id="c4">
+                        paragraph 4
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

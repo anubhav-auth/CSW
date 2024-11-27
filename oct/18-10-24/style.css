@@ -1,0 +1,16 @@
+input{
+border: dashed;
+outline-color:green;
+}
+
+#sub,#up{
+border: solid
+}
+
+#sub:hover{
+color:Black;
+}
+
+#sub:active{
+    color: aqua;
+}

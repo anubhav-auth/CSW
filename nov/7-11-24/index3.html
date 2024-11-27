@@ -1,0 +1,40 @@
+<html>
+
+<head>
+	<style>
+		div {
+			height: 100px;
+			width: 100px
+		}
+
+		.highlight {
+			background-color: red;
+		}
+
+		.dim {
+			opacity: 0.5;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$("#b1").click(function () {
+				$("div").removeClass("dim")
+				$("div").addClass("highlight")
+			})
+			$("#b2").click(function () {
+				$("div").removeClass("highlight")
+				$("div").addClass("dim")
+			})
+		})
+	</script>
+</head>
+
+<body>
+	<div>hello</div>
+	<button id="b1">highlight</button>
+	<button id="b2">dim</button>
+</body>
+
+</html>

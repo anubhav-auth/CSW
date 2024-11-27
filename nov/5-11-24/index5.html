@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#bt1").click(function () {
+                $("#img").before($("#img").attr("src"))
+            })
+
+            $("#bt2").click(function () {
+                $("#img").after("hello")
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <img id="img"
+        src="https://d1vqfl8cu8qgdj.cloudfront.net/assets/small_website/image/Img-World/rides-thumbs-cn-finnjake.webp">
+    <br>
+    <button id="bt1">before</button>
+    <button id="bt2">after</button>
+</body>
+
+</html>

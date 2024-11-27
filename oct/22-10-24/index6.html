@@ -1,0 +1,50 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(
+            function () {
+                // $("#hi").click(
+                //     function(){
+                //        $("h1").toggle();
+                //     }
+                // )
+
+                $("h1").mouseenter(
+                    function () {
+                        alert("mouse entering")
+                    }
+                )
+                $("h1").mouseleave(
+                    function () {
+                        alert("mouse leaving")
+                    }
+                )
+
+
+                $("p").dblclick(
+                    function () {
+                        $("h1").toggle();
+                    }
+                )
+                // $("#sh").click(
+                //     function(){
+                //        $("h1").show();
+                //     }
+                // )
+            }
+        )
+    </script>
+</head>
+
+<body>
+    <h1>JQuery</h1>
+    <p>Hello world</p>
+    <button id="hi">toggle</button>
+    <!-- <button id="sh">show</button> -->
+</body>
+
+</html>

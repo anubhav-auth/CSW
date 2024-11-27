@@ -1,0 +1,49 @@
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+            $("#bt1").click(function () {
+                $("#p1").text("Anubhav Jaiswal")
+            })
+            $("#bt5").click(function () {
+                $("#p1").append(" jaiswal")            
+	})
+            $("#bt6").click(function () {
+                $("#p1").prepend("Sir ")
+            })
+            $("#bt2").click(function () {
+                $("#p2").html("redg no: <b>2341010007</b>")
+            })
+            $("#bt3").click(function () {
+                $("#a1").attr("href", "https://www.soa.ac.in/iter")
+            })
+            $("#bt4").click(function () {
+                $("#i1").val("anubhavj2002@gmail.com")  
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <p id="p1">Anubhav</p>
+    <p id="p2">redg no: <i>2341010007</i></p>
+    <input id="i1" type="text" value="9883192692">
+    <br>
+    <a id="a1" href="https://www.google.com">want to go to website</a>
+    <br>
+    <br>
+    <button id="bt1">text</button>
+    <button id="bt2">html</button>
+    <button id="bt3">atrb</button>
+    <button id="bt4">value</button>
+<button id="bt5">append</button>
+<button id="bt6">prepend</button>
+
+</body>
+
+</html>

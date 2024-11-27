@@ -1,0 +1,19 @@
+#q2{
+    display: flex;
+}
+
+img{
+width:400px;
+margin-bottom:15px;
+}
+
+figCaption{
+font-weight:bold;
+}
+.prodCon{
+border: 10px solid black;
+width:400px;
+height:fit-content;
+padding:20px;
+margin:15px;
+}
