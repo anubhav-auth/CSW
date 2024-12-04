@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title>MyEShop</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        img {
+            height: 60px;
+        }
+
+        input {
+            margin: 5px;
+        }
+
+        .btn {
+            margin: 5px;
+        }
+
+        form {
+            justify-content: center;
+        }
+
+        #carimg {
+            height: 250px;
+        }
+
+        .carousel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .carousel-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $('#ser').click(function () {
+                var searchparam = $('#serbar').val();
+                alert(searchparam)
+                $('#serbar').val("");
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h1>Welcome to My E-Shop</h1>
+        <p>Buy Any Product you Like at a Reasonable Price</p>
+
+        <form class="form-inline">
+            <img src="logo.png">
+            <input type="text" id="serbar" placeholder="search">
+            <div class="btn-group">
+                <div class="btn-group">
+                    <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">categories</button>
+                    <div class="dropdown-menu">
+                        <p class="dropdown-item">CLOTHES</p>
+                        <p class="dropdown-item">FOOD AND BEVERAGES</p>
+                        <p class="dropdown-item">HEALTH & BEAUTY</p>
+                        <p class="dropdown-item">SPORTS & LEISURE</p>
+                        <p class="dropdown-item">BOOKS & ENTERTAINMENTS</p>
+                    </div>
+                </div>
+            </div>
+            <button type="button" id="ser" class="btn ">Search</button>
+            <button type="button" class="btn ">+</button>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a href="#" class="nav-link  active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Special Offers</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="login.html" class="nav-link">Login</a></li>
+            </ul>
+        </form>
+        <br />
+        <div id="demo" class="carousel slide  w-50" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+                <li data-target="#demo" data-slide-to="3"></li>
+                <li data-target="#demo" data-slide-to="4"></li>
+                <li data-target="#demo" data-slide-to="5"></li>
+                <li data-target="#demo" data-slide-to="6"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="carimg" class="d-block" src="prod/p1.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img id="carimg" class="d-block" src="prod/p2.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img id="carimg" class="d-block" src="prod/p3.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img id="carimg" class="d-block" src="prod/p4.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img id="carimg" class="d-block" src="prod/p5.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img id="carimg" class="d-block" src="prod/p6.jpg">
+                </div>
+                <div class="carousel-item">
+                    <img id="carimg" class="d-block" src="prod/p7.jpg">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+
+    </div>
+</body>
+
+</html>
