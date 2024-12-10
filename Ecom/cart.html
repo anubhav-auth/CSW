@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        .cart-item {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Shopping Cart</h1>
+        <div id="cart-items"></div>
+        <a href="payment.html" class="btn btn-success my-3">Proceed to Payment</a>
+        <a href="index.html" class="btn btn-secondary my-3">Back to Products</a>
+    </div>
+
+    <script>
+        let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+        function renderCart() {
+            $('#cart-items').html('');
+            let total = 0;
+            cart.forEach((item, index) => {
+                total += item.price;
+                $('#cart-items').append(`
+                    <div class="cart-item">
+                        <p>${item.name} - $${item.price}</p>
+                    </div>
+                `);
+            });
+            $('#cart-items').append(`<h3>Total: $${total}</h3>`);
+        }
+
+        // Initial render
+        renderCart();
+    </script>
+</body>
+</html>
